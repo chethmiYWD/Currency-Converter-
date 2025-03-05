@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
 
+    <div class="card">
+        
+        <form>
+            <h3 id="amount">Amount</h3>
+
+            <div class="icons">
+                <img width="30" id="clear" height="30" src="https://img.icons8.com/ios/50/clear-symbol--v1.png" alt="clear-symbol--v1"/>
+                <input type="reset" id="delete" value="C">
+            </div>
+
+            <div class="input-container">
+                <input type="number" class="styled-input" placeholder="Enter amount" min="0">
+            </div>
+
+            <div class="box-1">
+                <select id="from-currency" class="styled-select"></select>
+                <i class='bx bxs-down-arrow'></i>
+            </div>
+           
+                
+            <div class="box-2">
+                <select id="to-currency" class="styled-select"></select>
+                <i class='bx bxs-down-arrow'></i>
+            </div>
+                
+
+            
+            <button id="convert">Convert</button>
+            
+            <p id="result"></p>
+
+
+        </form>
+
+    </div>
+    
+    
+<script src="api-keys.js"></script>
+<script src="currency-codes.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
